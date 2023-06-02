@@ -1,7 +1,11 @@
 <?php
-if(!is_dir(__DIR__.'./db'))
-    mkdir(__DIR__.'./db');
-if(!defined('db_file')) define('db_file',__DIR__.'./db/employment_db.db');
+if (!is_dir(__DIR__ . '/db')) {
+    mkdir(__DIR__ . '/db');
+}
+if (!defined('db_file')) {
+    define('db_file', __DIR__ . '/db/employment_db.db');
+}
+
 function my_udf_md5($string) {
     return md5($string);
 }
